@@ -1,0 +1,14 @@
+.title{
+    margin-bottom: 24px;
+    font-family: $font;
+    font-weight: 900;
+    font-size: 36px;
+    color: $blueDark;
+}
+
+@media(max-width: 425px){
+    .title{
+        margin-bottom: 16px;
+        font-size: 24px;
+    }
+}

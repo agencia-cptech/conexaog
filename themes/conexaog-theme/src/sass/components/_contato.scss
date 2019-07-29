@@ -1,0 +1,145 @@
+#contato{
+    position: relative;
+    padding-top: 15%;
+    margin-top: 5%;
+    display: flex;
+
+    .title{
+        margin-bottom: 0;
+    }
+
+    .contatoForm{
+        display: flex;
+        flex-direction: column;
+
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            justify-content: center;
+            align-items: flex-start;
+
+            p, label, span{
+                width: 100%;
+            }
+
+            
+            input{
+                width: 100%;
+                background-color: #EEE;
+                border-radius: 2px;
+                border: none;
+                padding: 10px;
+                margin-top: 10px;
+            }
+
+            input[type='submit']{
+                width: 194px;
+                height: 40px;
+                border-radius: 4px;
+                background: $blueLight;
+                font-family: $font;
+                font-size: 14px;
+                font-weight: 900;
+                color: $white;
+                line-height: 17px;
+                letter-spacing: 1.375px;
+                text-align: center;
+                text-transform: uppercase;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: all .2s;
+            }
+
+            textarea {
+                width: 100%;
+                padding: 10px;
+                margin-top: 10px;
+                background-color: #EEE; 
+                border: none;
+                resize: none;
+            }
+            
+            .contForm{
+                display: flex;
+
+                p, br{
+                    display: none;
+                }
+
+                label{
+                    width: 50%;
+                }
+
+                label:nth-child(1){
+                    margin-right: 16px;
+                }
+            }
+
+            label{
+                margin-top: 24px;
+                font-size: 16px;
+                font-weight: 900;
+                color: #677397;
+                line-height: 35px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .button{
+                margin-top: 20px;
+            }
+        }
+    }
+
+    img{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40%;
+        -webkit-mask-image: url('../../assets/images/contato.svg');
+        mask-image: url('../../assets/images/contato.svg');
+        -webkit-mask-size: 100%;
+        mask-size: 100%;
+        -webkit-mask-repeat: no-repeat; 
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+    }
+}
+@media(max-width: 768px){
+    #contato{
+        flex-flow: column-reverse wrap;
+
+        .contatoForm{
+            form{
+               width: 100%;
+    
+               .contForm{
+                   width: 100%;
+                   flex-flow: column wrap;
+    
+                   label{
+                       width: 100%;
+                   }
+                   
+               }
+           }
+        }
+
+
+
+    // .contatoForm{
+    //   flex-flow: wrap column;
+    // }
+    // .form__input--textarea{
+    //     width: 0;
+    // }
+    img{
+        width: 100%;
+        position: relative;
+        // order: -1;
+    }
+  }
+}

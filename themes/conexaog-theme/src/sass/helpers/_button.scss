@@ -1,0 +1,44 @@
+.button{
+    width: 194px;
+    height: 40px;
+    border-radius: 4px;
+    background: $blueLight;
+    font-family: $font;
+    font-size: 14px;
+    color: $white;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+
+    &:hover{
+        border: 3px solid $blueLight;
+        background: none;
+        color: $blueDark;
+    }
+}
+
+.button--inverse{
+    // padding: 9px 55px;
+    border: 3px solid $blueLight;
+    background: none;
+    color: $blueDark;
+
+    &:hover{
+        // padding: 12px 58px;
+        border: none;
+        background: $blueLight;
+        color: $white;
+    }
+}
+
+.button--menu{
+    &:hover{
+        // border: 3px solid $white;
+        // background: none;
+        color: $white;
+    }
+}
