@@ -1,7 +1,7 @@
-.header{
+.headerpage{
     position: relative;
     width: 100%;
-    height: 130vh;
+    height: 100vh;
     mix-blend-mode: color;
     filter: brightness(150%);
     display: flex;
@@ -15,43 +15,34 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        z-index: 3;
+        z-index: 10;
     }
     div{
         position: relative;
-        height: 480px;
+        display: flex;
+        align-content: center;
+        height: 160px;
         z-index: 5;
         
         h2{
             color: #fff;
-            margin-bottom: 12px;
-            font-size: 70px;
+            font-size: 60px;
             z-index: 5;
             text-transform: uppercase;
-        }
-        p{
-            color: #fff;
-            font-family: $font;
-            line-height: 18px;
-            font-size: 20px;
-            line-height: 33px;
-            z-index: 5;
-            max-width: 508px;
-            
         }
     }
     
 }
-.header::before{
+.headerpage::before{
     content: "";
     width: 100%;
-    height: 130vh;
+    height: 100vh;
     background-color: rgba(118, 38, 90, 0.8);
     position: absolute;
     z-index: -2;
 }
 @media (max-width: 768px){
-    .header{
+    .headerpage{
         height: 100vh;
         justify-content: center;
         align-content: center;
@@ -69,7 +60,7 @@
             }
         }
     }
-    .header::before{
+    .headerpage::before{
         height: 100vh;
     }
 }

@@ -12,7 +12,6 @@
 
 	<?php include('src/components/navbar.php'); ?>
 <main>
-	
-	<?php include('src/components/header.php'); ?>
-
+	<?php if(is_front_page()): include('src/components/header.php'); ?>
+	<?php else: include('src/components/headerpage.php'); endif?>
 	

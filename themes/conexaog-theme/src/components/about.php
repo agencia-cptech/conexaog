@@ -1,7 +1,7 @@
 <section class='container' id='about'>
     <div class='about__text'>
-        <?php 
-            $args = array('post_type' => 'page', 'pagename' => 'sobre');
+        <?php
+            $args = array('post_type' => 'page', 'pagename' => 'sobre');  
 
             $my_page = get_posts($args);
 
@@ -11,7 +11,7 @@
         <h2 class="title"><?php the_title(); ?></h2>
 
         <?php
-            the_content(); 
+            the_excerpt();
         ?>
 
         <!-- <a  class='button' href='#'>Ver Mais</a> -->
