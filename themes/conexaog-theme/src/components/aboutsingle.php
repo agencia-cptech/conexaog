@@ -21,15 +21,13 @@
             <!-- year and dots -->
             <div class="year-and-dots">
                 <div>
-                    <p>2016</p>
+                    <p>2019</p>
                     <div></div>
                 </div>
             </div>
 
             <!-- posts -->
-            <?php 
-                query_posts('post_type=linhadotempo');
-            ?>
+            <?php query_posts('post_type=linhadotempo'); ?>
             <?php if(have_posts()): while(have_posts()): the_post(); ?>
 
             <div class="post">
@@ -57,7 +55,7 @@
             <!-- year and dots -->
             <div class="year-and-dots">
                 <div>
-                    <p>2019</p>
+                    <p>2016</p>
                     <div></div>
                 </div>
             </div>

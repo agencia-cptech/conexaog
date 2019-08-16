@@ -60,6 +60,18 @@
                 'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'page-attributes'),
             )
         );
+        register_post_type('projetos',
+            array(
+                'labels' => array(
+                    'name' => __('Projetos'),
+                    'singular_name' => __('Projeto')
+                ),
+                'public' => true,
+                'has_archive' => true,
+                'menu_icon' => 'dashicons-networking',
+                'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'page-attributes'),
+            )
+        );
     }
 
     add_action( 'init', 'meus_posts_types');

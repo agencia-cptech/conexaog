@@ -1,4 +1,4 @@
-<section class='container' id='about'>
+<section class='container about' id='about'>
     <div class='about__text'>
         <?php
             $args = array('post_type' => 'page', 'pagename' => 'sobre');  
