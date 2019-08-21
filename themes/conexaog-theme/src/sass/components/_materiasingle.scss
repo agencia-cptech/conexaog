@@ -1,0 +1,38 @@
+h2{
+    color: #000;
+}
+p{
+    color: #000;
+}
+.materiasingle{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    .materiasingle-post{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        overflow: hidden;
+        box-shadow: 0 0 10px 0px rgba(38, 52, 139, 0.34);
+        border-radius: 10px;
+        margin-top: 100px;
+        width: 530px;
+        height: 200px;
+        .materiasingle-img{
+            width: 35%;
+            height: 100%;
+        }
+        .materiasingle-org{
+            width: 65%;
+            padding: 20px;
+
+            h2{
+
+            }
+            p{
+                margin-top: 10px;
+            }
+        }
+    }
+}

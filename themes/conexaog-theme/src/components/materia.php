@@ -1,6 +1,6 @@
 <section class='container' id='materia'>
     <?php 
-        $args = array('post_type' => 'page', 'pagename' => 'materia');
+        $args = array('post_type' => 'page', 'pagename' => 'materias');
 
         $my_page = get_posts($args);
     ?>
@@ -10,7 +10,7 @@
     <h2 class="title materia_title"><?php the_title()?></h2>
     <div class="materia-posts">
         <?php 
-            query_posts('post_type=materia' );
+            query_posts('post_type=materia');
         ?>
         <?php if(have_posts()): while(have_posts()): the_post(); ?>
         <div class="post">

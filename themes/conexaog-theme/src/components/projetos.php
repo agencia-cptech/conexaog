@@ -1,5 +1,5 @@
 <?php
-    $args = array('post_type' => 'page', 'pagename' => 'sobre');  
+    $args = array('post_type' => 'page', 'pagename' => 'projeto');  
 
     $my_page = get_posts($args);
 
@@ -7,13 +7,12 @@
 ?>
 
 <section class="container projetos">
-    <div class="categorias"></div>
     <div class="projetos-org">
 
         <?php query_posts('post_type=projetos'); ?>
         <?php if(have_posts()): while(have_posts()): the_post(); ?>
 
-        <div class="projetos-post">
+        <a href="<?php permalink_link();?>" class="projetos-post">
             <div class="projetos-img">
                 <img src="<?php echo get_the_post_thumbnail_url(get_the_ID());?>">
             </div>
@@ -21,7 +20,7 @@
                 <h2><?php the_title()?></h2>
                 <?php the_excerpt()?>
             </div>
-        </div>
+        </a>
 
         <?php endwhile; ?>
         <?php else :?>

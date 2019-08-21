@@ -1,0 +1,60 @@
+.postmateria{
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 100px;
+    .postmateria-first{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        width: 100%;
+        div{
+            width: 28%;
+            height: 330px;
+            border-radius: 0 0 100px 0;
+        }
+        p{
+            width: 68%;
+            font-family: $font;
+            font-size: 20px;
+            color: $grayDark;
+            line-height: 30px;
+        }
+        p:first-letter{
+            text-transform: uppercase;
+            font-size: 60px;
+            line-height: 55px;
+        }
+    }
+    .postmateria-second{
+        p{
+            font-family: $font;
+            margin-bottom: 24px;
+            font-size: 20px;
+            color: $grayDark;
+            line-height: 30px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .postmateria{
+        
+        .postmateria-first{
+            margin-bottom: 20px;
+            div{
+              display: none;
+            }
+            p{
+                width: 100%;
+            }
+            p:first-letter{
+                
+            }
+        }
+        .postmateria-second{
+            p{
+               
+            }
+        }
+    }
+}
