@@ -15,7 +15,7 @@
             the_content(); 
         ?>
     </div>
-    <!-- <img src="<?php bloginfo('template_url')?>/assets/images/image.svg"> -->
+     <img src="<?php bloginfo('template_url')?>/assets/images/image.svg"> 
     <?php the_post_thumbnail('full', array('style' => 'height: auto !important')); ?>
         <?php
             endforeach; else: ?>

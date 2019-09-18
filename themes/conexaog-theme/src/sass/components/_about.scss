@@ -1,64 +1,64 @@
-#about{
-    margin-bottom: 64px;
+#about {
+  margin-bottom: 64px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+
+  .about__text {
+    width: 50%;
     display: flex;
-    position: relative;
+    flex-direction: column;
     align-items: flex-start;
 
-    .about__text{
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-
-        p{
-            margin-bottom: 24px;
-            font-family: $font;
-            font-size: 20px;
-            color: $grayDark;
-            line-height: 35px;
-        }
+    p {
+      margin-bottom: 24px;
+      font-family: $font;
+      font-size: 20px;
+      color: $grayDark;
+      line-height: 35px;
     }
+  }
 
-    .about__img{
-        width: 50%;
-        margin-top: -8vw;
-        -webkit-mask-image: url('../../assets/images/sobre.svg');
-        mask-image: url('../../assets/images/sobre.svg');
-        -webkit-mask-size: 100%;
-        mask-size: 100%;
-        -webkit-mask-repeat: no-repeat; 
-        mask-repeat: no-repeat;
-        -webkit-mask-position: center;
-        mask-position: center;
-    }
+  .about__img {
+    width: 50%;
+    margin-top: -8vw;
+    -webkit-mask-image: url("../../assets/images/sobre.svg");
+    mask-image: url("../../assets/images/sobre.svg");
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+  }
 }
 
-@media(max-width: 768px){
-    #about{
-        flex-direction: column;
-        align-items: center;
-    
-        .about__text{
-            width: 100%;
-        }
-    
-        .about__img{
-            width: 60%;
-            min-width: 300px;
-            margin-top: 0;
-            margin-bottom: 24px;
-            order: -1;
-        }
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column;
+    align-items: center;
+
+    .about__text {
+      width: 100%;
     }
+
+    .about__img {
+      width: 60%;
+      min-width: 299px;
+      margin-top: 0;
+      margin-bottom: 24px;
+      order: -1;
+    }
+  }
 }
 
-@media(max-width: 425px){
-    #about{    
-        .about__text{
-            p{
-                font-size: 14px;
-                line-height: 20px;
-            }
-        }
+@media (max-width: 425px) {
+  #about {
+    .about__text {
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
+  }
 }

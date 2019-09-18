@@ -14,6 +14,7 @@ var width = jQuery(window).width();
 
 jQuery(".burger").click(function() {
   jQuery(this).toggleClass("activated");
+  
   if(width >= 320 && width <= 768){
     if(jQuery(".menu-menu-topo-container").hasClass('menu-slide')){
       jQuery(".menu-menu-topo-container").animate({display: 'none', width: '0%'}).removeClass('menu-slide');
